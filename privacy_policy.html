@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Политика конфиденциальности — «Ты не сможешь»</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --surface-color: #1e293b;
+            --border-color: #334155;
+            --primary-color: #f59e0b;
+            --secondary-color: #38bdf8;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --card-radius: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.65;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 840px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 36px;
+            padding: 24px 16px;
+            background: linear-gradient(180deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0) 100%);
+            border-radius: var(--card-radius);
+            border: 1px solid var(--border-color);
+        }
+
+        .app-badge {
+            display: inline-block;
+            background-color: rgba(245, 158, 11, 0.15);
+            color: var(--primary-color);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 12px;
+            border: 1px solid rgba(245, 158, 11, 0.3);
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+
+        .last-updated {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        .card {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--card-radius);
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+        }
+
+        h2 {
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 12px 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 10px;
+            font-size: 15px;
+            color: var(--text-secondary);
+        }
+
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 8px;
+            color: var(--primary-color);
+            font-size: 18px;
+            line-height: 1;
+        }
+
+        strong {
+            color: var(--text-primary);
+        }
+
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+        .lang-switch {
+            text-align: center;
+            margin-top: 32px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 24px;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="app-badge">Официальный документ</span>
+            <h1>Политика конфиденциальности</h1>
+            <p class="last-updated">Приложение «Ты не сможешь» (You Can\'t! • Быки и Коровы)<br>Дата вступления в силу: 15 октября 2026 г.</p>
+        </header>
+
+        <section class="card">
+            <h2>1. Общие положения</h2>
+            <p>Настоящая Политика конфиденциальности описывает, как мобильное приложение <strong>«Ты не сможешь»</strong> (далее — «Приложение») обрабатывает информацию при использовании пользователями.</p>
+            <p>Мы уважаем право пользователей на конфиденциальность. Игра разработана для локального использования, не требует создания учётной записи, ввода личных данных и может функционировать без постоянного доступа к сети Интернет.</p>
+        </section>
+
+        <section class="card">
+            <h2>2. Сбор и использование персональных данных</h2>
+            <p><strong>Приложение НЕ собирает, не передает и не хранит персональные данные пользователей:</strong></p>
+            <ul>
+                <li>Мы не запрашиваем и не храним ваши ФИО, адрес электронной почты, номер телефона, адрес или список контактов.</li>
+                <li>Мы не имеем доступа к камере, микрофону, галерее фото или точной геолокации вашего устройства.</li>
+                <li>Игровой процесс, история попыток и рекорды сохраняются <strong>исключительно локально на вашем устройстве</strong> с использованием встроенных механизмов Android SharedPreferences.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>3. Сторонние сервисы и реклама</h2>
+            <p>Для поддержки разработки и бесплатного распространения Приложения в него интегрированы официальные службы монетизации от сторонних поставщиков:</p>
+            <ul>
+                <li>
+                    <strong>Google AdMob (Google LLC / Google Ireland Limited):</strong><br>
+                    Приложение использует библиотеку Google Mobile Ads SDK для показа рекламных баннеров. AdMob может автоматически собирать и обрабатывать обезличенные технические идентификаторы устройства (например, рекламный идентификатор Google Advertising ID / GAID), IP-адрес, тип устройства и статистику взаимодействия с рекламой в целях предотвращения мошенничества и показа релевантных объявлений.
+                </li>
+                <li>
+                    <strong>Службы Google Play (Google Play Services):</strong><br>
+                    Используются для обеспечения корректной работы библиотек, установки обновлений и системных функций операционной системы Android.
+                </li>
+            </ul>
+            <p>Политика конфиденциальности Google доступна по адресу: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>.</p>
+            <p>Подробнее о том, как Google использует данные при использовании приложений партнеров: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">https://policies.google.com/technologies/ads</a>.</p>
+        </section>
+
+        <section class="card">
+            <h2>4. Управление персонализацией рекламы</h2>
+            <p>Вы имеете полное право ограничить или сбросить рекламный идентификатор своего устройства:</p>
+            <ul>
+                <li>В настройках операционной системы Android перейдите в: <strong>Настройки → Google → Реклама</strong>.</li>
+                <li>Вы можете активировать опцию <strong>«Сбросить рекламный идентификатор»</strong> или <strong>«Удалить рекламный идентификатор»</strong>.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>5. Конфиденциальность детей (COPPA)</h2>
+            <p>Приложение не предназначено специально для сбора личной информации у детей в возрасте до 13 лет (или минимального возраста, установленного законодательством вашей страны). Мы сознательно не запрашиваем и не собираем персональные данные несовершеннолетних.</p>
+        </section>
+
+        <section class="card">
+            <h2>6. Права пользователей (GDPR / CCPA)</h2>
+            <p>В соответствии с Общим регламентом по защите данных (GDPR) и Законом о защите конфиденциальности потребителей Калифорнии (CCPA):</p>
+            <ul>
+                <li>Пользователи имеют право на приватность и контроль над своими данными.</li>
+                <li>Так как мы не храним персональных данных на собственных серверах, все игровые данные удаляются пользователем в любой момент простым очищением данных приложения или его удалением с устройства.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>7. Изменения в политике конфиденциальности</h2>
+            <p>Мы можем периодически обновлять данную Политику конфиденциальности. Новая редакция вступает в силу с момента ее публикации на этой странице с обновлением даты «Дата вступления в силу».</p>
+        </section>
+
+        <section class="card">
+            <h2>8. Контактная информация</h2>
+            <p>Если у вас возникли вопросы, пожелания или предложения касательно данной Политики конфиденциальности, вы можете связаться с разработчиком через контактный адрес электронной почты, указанный на странице приложения в магазине Google Play.</p>
+        </section>
+
+        <footer>
+            <p>© 2026 «Ты не сможешь» (You Can\'t!). Все права защищены.</p>
+        </footer>
+    </div>
+</body>
+</html>
