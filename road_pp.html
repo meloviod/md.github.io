@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhythm Road — Privacy Policy / Политика конфиденциальности</title>
+    <style>
+        :root {
+            --bg-dark: #0a041a;
+            --bg-card: #140b2e;
+            --neon-cyan: #00f0ff;
+            --neon-pink: #ff1e82;
+            --neon-amber: #ffae00;
+            --text-main: #f0f4ff;
+            --text-muted: #b2bddb;
+            --border-cyan: rgba(0, 240, 255, 0.35);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: radial-gradient(circle at 50% 0%, #240b4c 0%, var(--bg-dark) 70%);
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.65;
+            min-height: 100vh;
+            padding: 24px 16px 64px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(20, 11, 46, 0.9);
+            border: 2px solid var(--border-cyan);
+            border-radius: 20px;
+            box-shadow: 0 0 35px rgba(0, 240, 255, 0.15), inset 0 0 20px rgba(255, 30, 130, 0.08);
+            padding: 36px 32px;
+        }
+
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            border-bottom: 1px solid var(--border-cyan);
+            padding-bottom: 24px;
+            margin-bottom: 28px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .brand-badge {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, #160736, #3d0c66);
+            border: 2px solid var(--neon-cyan);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 22px;
+            color: var(--neon-cyan);
+            text-shadow: 2px 2px 0 var(--neon-pink);
+            box-shadow: 0 0 14px rgba(0, 240, 255, 0.35);
+        }
+
+        .brand-title h1 {
+            font-size: 26px;
+            letter-spacing: 1px;
+            color: var(--neon-cyan);
+            text-shadow: 2px 2px 0 rgba(255, 30, 130, 0.85);
+            margin-bottom: 2px;
+        }
+
+        .brand-title p {
+            font-size: 13px;
+            color: var(--neon-amber);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .lang-switcher {
+            display: flex;
+            gap: 8px;
+            background: rgba(10, 4, 26, 0.8);
+            padding: 6px;
+            border-radius: 12px;
+            border: 1px solid var(--border-cyan);
+        }
+
+        .lang-btn {
+            background: transparent;
+            color: var(--text-muted);
+            border: 1px solid transparent;
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .lang-btn:hover {
+            color: var(--text-main);
+            border-color: rgba(0, 240, 255, 0.4);
+        }
+
+        .lang-btn.active {
+            background: rgba(0, 240, 255, 0.16);
+            color: var(--neon-cyan);
+            border-color: var(--neon-cyan);
+            box-shadow: 0 0 10px rgba(0, 240, 255, 0.25);
+        }
+
+        .lang-section {
+            display: none;
+        }
+
+        .lang-section.active {
+            display: block;
+            animation: fadeIn 0.25s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        .updated-date {
+            display: inline-block;
+            font-size: 13px;
+            color: var(--neon-amber);
+            background: rgba(255, 174, 0, 0.12);
+            border: 1px solid rgba(255, 174, 0, 0.4);
+            padding: 4px 12px;
+            border-radius: 999px;
+            margin-bottom: 24px;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: var(--neon-cyan);
+            margin-top: 26px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        p {
+            color: var(--text-muted);
+            margin-bottom: 14px;
+        }
+
+        ul {
+            margin: 10px 0 16px 22px;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--text-main);
+        }
+
+        .highlight-box {
+            background: rgba(0, 240, 255, 0.06);
+            border-left: 4px solid var(--neon-cyan);
+            padding: 14px 18px;
+            border-radius: 0 12px 12px 0;
+            margin: 18px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            color: var(--text-main);
+        }
+
+        a {
+            color: var(--neon-cyan);
+            text-decoration: none;
+            border-bottom: 1px dashed rgba(0, 240, 255, 0.5);
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--neon-amber);
+            border-bottom-color: var(--neon-amber);
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(0, 240, 255, 0.2);
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 22px 18px;
+            }
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .lang-switcher {
+                width: 100%;
+                justify-content: space-between;
+            }
+            .lang-btn {
+                flex: 1;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="brand">
+            <div class="brand-badge">RR</div>
+            <div class="brand-title">
+                <h1>RHYTHM ROAD</h1>
+                <p>3D MUSIC BEAT RACER &bull; PRIVACY POLICY</p>
+            </div>
+        </div>
+        <div class="lang-switcher" role="tablist" aria-label="Language switcher">
+            <button class="lang-btn active" onclick="setLang('ru')" id="btn-ru">RU • Русский</button>
+            <button class="lang-btn" onclick="setLang('uk')" id="btn-uk">UK • Українська</button>
+            <button class="lang-btn" onclick="setLang('en')" id="btn-en">EN • English</button>
+        </div>
+    </header>
+
+    <!-- ==================== RUSSIAN ==================== -->
+    <section id="lang-ru" class="lang-section active">
+        <h2>Политика конфиденциальности</h2>
+        <div class="updated-date">Дата вступления в силу: 18 октября 2026 г.</div>
+
+        <p>Настоящая Политика конфиденциальности описывает, как мобильная игра <strong>Rhythm Road</strong> (пакет <code>com.rhythmroad</code>, далее — «Приложение») обрабатывает данные пользователей, какие разрешения запрашивает и как взаимодействует со сторонними сервисами.</p>
+
+        <div class="highlight-box">
+            <p><strong>Главное:</strong> Rhythm Road не требует регистрации, не собирает ваше имя, телефон или адрес электронной почты и <strong>не отправляет</strong> ваши музыкальные файлы или аудиозаписи на внешние серверы. Весь анализ музыки для построения трассы происходит исключительно локально на вашем устройстве в режиме реального времени.</p>
+        </div>
+
+        <h3>1. Обработка аудио и локальных файлов</h3>
+        <p>Основная функция игры — генерация гоночной трассы, препятствий и визуального эквалайзера под ритм музыки. Для этого Приложение может запрашивать следующие системные разрешения Android:</p>
+        <ul>
+            <li><strong>Аудиовизуализация (<code>android.permission.RECORD_AUDIO</code> и <code>MODIFY_AUDIO_SETTINGS</code>):</strong> техническое требование стандартного системного компонента Android <code>Visualizer</code> для считывания частотного спектра (FFT) воспроизводимого в игре музыкального трека. Приложение <strong>не записывает голос с микрофона</strong>, не сохраняет и никуда не передает аудиопоток.</li>
+            <li><strong>Доступ к аудиофайлам (<code>READ_MEDIA_AUDIO</code> / <code>READ_EXTERNAL_STORAGE</code>):</strong> используется только тогда, когда вы сами выбираете локальный музыкальный файл (например, MP3) со своего устройства для заезда. Выбранные аудиофайлы читаются локально и никогда не загружаются в интернет.</li>
+        </ul>
+
+        <h3>2. Локальное хранение игрового прогресса</h3>
+        <p>Ваши рекорды, количество собранных монет, выбранная тема оформления (3D Авто, 3D Мото, Киберпанк), купленные улучшения в магазине и настройки звука сохраняются только локально в памяти вашего устройства (<code>SharedPreferences</code>). При удалении Приложения эти данные автоматически удаляются системой Android.</p>
+
+        <h3>3. Сторонние сервисы и реклама (Google AdMob)</h3>
+        <p>В бесплатной версии Приложения для показа баннерной и межстраничной рекламы используется рекламная сеть <strong>Google AdMob</strong> (предоставляемая Google LLC). При отключении рекламы через внутриигровой магазин («Без рекламы») загрузка и показ рекламных объявлений полностью прекращаются.</p>
+        <p>Для показа релевантной рекламы, ограничения частоты показов и защиты от мошенничества SDK Google AdMob может автоматически собирать и обрабатывать следующие неперсонализированные или псевдонимизированные данные:</p>
+        <ul>
+            <li>Рекламный идентификатор устройства (Google Advertising ID / <code>com.google.android.gms.permission.AD_ID</code>);</li>
+            <li>IP-адрес (для определения приблизительного региона/страны);</li>
+            <li>Технические сведения об устройстве (модель, версия ОС Android, язык системы, размер экрана);</li>
+            <li>Статистику взаимодействия с рекламными блоками (показы, клики) и диагностические данные о стабильности работы.</li>
+        </ul>
+        <p>С подробной информацией о том, как Google обрабатывает данные в партнерских приложениях, можно ознакомиться по ссылкам:</p>
+        <ul>
+            <li>Политика конфиденциальности Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+            <li>Как Google использует информацию из приложений партнеров: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">https://policies.google.com/technologies/partner-sites</a></li>
+        </ul>
+
+        <h3>4. Управление рекламным идентификатором и отказ от персонализации</h3>
+        <p>Вы можете в любой момент сбросить или удалить свой рекламный идентификатор, а также отключить персонализацию рекламы в настройках вашего Android-устройства: <strong>Настройки &rarr; Google &rarr; Реклама</strong> (или <strong>Конфиденциальность &rarr; Реклама</strong>). Кроме того, вы можете навсегда отключить всю рекламу непосредственно внутри игры.</p>
+
+        <h3>5. Конфиденциальность детей</h3>
+        <p>Приложение не предназначено для преднамеренного сбора каких-либо персональных данных у детей младше 13 лет (или минимального возраста, установленного законодательством вашей страны). Если вы являетесь родителем или опекуном и полагаете, что ваш ребенок предоставил какую-либо личную информацию, пожалуйста, свяжитесь с нами для её незамедлительного удаления.</p>
+
+        <h3>6. Безопасность и передача данных</h3>
+        <p>Все сетевые запросы стороннего рекламного SDK (Google AdMob) осуществляются по защищенному протоколу шифрования HTTPS/TLS. Разработчик не ведет собственных баз данных пользователей и не продает данные третьим лицам.</p>
+
+        <h3>7. Изменения в Политике конфиденциальности</h3>
+        <p>Мы можем периодически обновлять настоящую Политику конфиденциальности при выходе новых версий Приложения или изменении требований Google Play. Актуальная версия всегда доступна на этой странице с указанием даты последнего обновления.</p>
+
+        <h3>8. Контактная информация</h3>
+        <p>Если у вас возникли вопросы или предложения относительно настоящей Политики конфиденциальности или работы Приложения <strong>Rhythm Road</strong>, вы можете связаться с разработчиком по электронной почте или через контакты, указанные на странице игры в Google Play Store.</p>
+    </section>
+
+    <!-- ==================== UKRAINIAN ==================== -->
+    <section id="lang-uk" class="lang-section">
+        <h2>Політика конфіденційності</h2>
+        <div class="updated-date">Дата набрання чинності: 18 жовтня 2026 р.</div>
+
+        <p>Ця Політика конфіденційності описує, як мобільна гра <strong>Rhythm Road</strong> (пакет <code>com.rhythmroad</code>, далі — «Додаток») обробляє дані користувачів, які дозволи запитує та як взаємодіє зі сторонніми сервісами.</p>
+
+        <div class="highlight-box">
+            <p><strong>Головне:</strong> Rhythm Road не вимагає реєстрації, не збирає ваше ім'я, номер телефону чи електронну пошту та <strong>не надсилає</strong> ваші музичні файли або аудіозаписи на зовнішні сервери. Увесь аналіз музики для побудови траси відбувається виключно локально на вашому пристрої в режимі реального часу.</p>
+        </div>
+
+        <h3>1. Обробка аудіо та локальних файлів</h3>
+        <p>Основна функція гри — генерація гоночної траси, перешкод та візуального еквалайзера під ритм музики. Для цього Додаток може запитувати такі системні дозволи Android:</p>
+        <ul>
+            <li><strong>Аудіовізуалізація (<code>android.permission.RECORD_AUDIO</code> та <code>MODIFY_AUDIO_SETTINGS</code>):</strong> технічна вимога стандартного системного компонента Android <code>Visualizer</code> для зчитування частотного спектра (FFT) музичного треку, що відтворюється у грі. Додаток <strong>не записує голос із мікрофона</strong>, не зберігає та нікуди не передає аудіопотік.</li>
+            <li><strong>Доступ до аудіофайлів (<code>READ_MEDIA_AUDIO</code> / <code>READ_EXTERNAL_STORAGE</code>):</strong> використовується лише тоді, коли ви власноруч обираєте локальний музичний файл (наприклад, MP3) зі свого пристрою для заїзду. Обрані аудіофайли зчитуються локально й ніколи не завантажуються в інтернет.</li>
+        </ul>
+
+        <h3>2. Локальне зберігання ігрового прогресу</h3>
+        <p>Ваші рекорди, кількість зібраних монет, обрана тема оформлення (3D Авто, 3D Мото, Кіберпанк), придбані покращення в магазині та налаштування звуку зберігаються лише локально в пам'яті вашого пристрою (<code>SharedPreferences</code>). Після видалення Додатка ці дані автоматично видаляються системою Android.</p>
+
+        <h3>3. Сторонні сервіси та реклама (Google AdMob)</h3>
+        <p>У безкоштовній версії Додатка для показу банерної та міжсторінкової реклами використовується рекламна мережа <strong>Google AdMob</strong> (надається Google LLC). У разі вимкнення реклами через внутрішньоігровий магазин («Без реклами») завантаження та показ рекламних оголошень повністю припиняються.</p>
+        <p>Для показу релевантної реклами, обмеження частоти показів і захисту від шахрайства SDK Google AdMob може автоматично збирати та обробляти такі дані:</p>
+        <ul>
+            <li>Рекламний ідентифікатор пристрою (Google Advertising ID / <code>com.google.android.gms.permission.AD_ID</code>);</li>
+            <li>IP-адресу (для визначення приблизного регіону/країни);</li>
+            <li>Технічні відомості про пристрій (модель, версія ОС Android, мова системи, розмір екрана);</li>
+            <li>Статистику взаємодії з рекламними блоками (покази, кліки) та діагностичні дані щодо стабільності роботи.</li>
+        </ul>
+        <p>Детальніше про те, як Google обробляє дані в партнерських додатках, можна дізнатися за посиланнями:</p>
+        <ul>
+            <li>Політика конфіденційності Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+            <li>Як Google використовує інформацію з додатків партнерів: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">https://policies.google.com/technologies/partner-sites</a></li>
+        </ul>
+
+        <h3>4. Керування рекламним ідентифікатором і відмова від персоналізації</h3>
+        <p>Ви можете будь-коли скинути або видалити свій рекламний ідентифікатор, а також вимкнути персоналізацію реклами в налаштуваннях вашого Android-пристрою: <strong>Налаштування &rarr; Google &rarr; Реклама</strong> (або <strong>Конфіденційність &rarr; Реклама</strong>). Крім того, ви можете назавжди вимкнути всю рекламу безпосередньо всередині гри.</p>
+
+        <h3>5. Конфіденційність дітей</h3>
+        <p>Додаток не призначений для навмисного збору будь-яких персональних даних у дітей віком до 13 років (або мінімального віку, встановленого законодавством вашої країни). Якщо ви є батьком або опікуном і вважаєте, що ваша дитина надала будь-яку особисту інформацію, будь ласка, зв'яжіться з нами для її негайного видалення.</p>
+
+        <h3>6. Безпека та передача даних</h3>
+        <p>Усі мережеві запити стороннього рекламного SDK (Google AdMob) здійснюються через захищений протокол шифрування HTTPS/TLS. Розробник не веде власних баз даних користувачів і не продає дані третім особам.</p>
+
+        <h3>7. Зміни в Політиці конфіденційності</h3>
+        <p>Ми можемо періодично оновлювати цю Політику конфіденційності з виходом нових версій Додатка або зміною вимог Google Play. Актуальна версія завжди доступна на цій сторінці із зазначенням дати останнього оновлення.</p>
+
+        <h3>8. Контактна інформація</h3>
+        <p>Якщо у вас виникли запитання або пропозиції щодо цієї Політики конфіденційності чи роботи Додатка <strong>Rhythm Road</strong>, ви можете зв'язатися з розробником електронною поштою або через контакти, вказані на сторінці гри в Google Play Store.</p>
+    </section>
+
+    <!-- ==================== ENGLISH ==================== -->
+    <section id="lang-en" class="lang-section">
+        <h2>Privacy Policy</h2>
+        <div class="updated-date">Effective Date: October 18, 2026</div>
+
+        <p>This Privacy Policy explains how the mobile game <strong>Rhythm Road</strong> (package name <code>com.rhythmroad</code>, hereinafter referred to as the "Application") handles user information, what device permissions it requests, and how third-party services operate within the Application.</p>
+
+        <div class="highlight-box">
+            <p><strong>Key Summary:</strong> Rhythm Road does not require account registration, does not collect your name, phone number, or email address, and <strong>never uploads or transmits</strong> your music files or audio recordings to any external server. All audio analysis used to generate the rhythm track happens 100% locally on your device in real time.</p>
+        </div>
+
+        <h3>1. Audio Analysis &amp; Local Media Permissions</h3>
+        <p>The core gameplay of Rhythm Road generates 3D obstacles, bonuses, and equalizer visuals synchronized to the beat of music. To provide this functionality, the Application may request the following Android permissions:</p>
+        <ul>
+            <li><strong>Audio Visualization (<code>android.permission.RECORD_AUDIO</code> and <code>MODIFY_AUDIO_SETTINGS</code>):</strong> Required by Android's standard <code>Visualizer</code> API to read real-time frequency spectrum (FFT) data from the audio output session currently playing in the game. The Application <strong>does not record microphone voice input</strong>, and never saves, stores, or transmits any audio recordings.</li>
+            <li><strong>Local Audio File Access (<code>READ_MEDIA_AUDIO</code> / <code>READ_EXTERNAL_STORAGE</code>):</strong> Requested only when you voluntarily choose to select a custom music file (such as an MP3 track) stored on your device. Selected audio files are processed strictly locally and are never uploaded anywhere.</li>
+        </ul>
+
+        <h3>2. Local Data Storage</h3>
+        <p>Your high scores, collected coins, selected visual theme (3D Car, 3D Moto, Cyberpunk), unlocked in-game shop upgrades, and audio settings are stored solely locally on your device using Android <code>SharedPreferences</code>. Uninstalling the Application removes this local data automatically.</p>
+
+        <h3>3. Third-Party Services &amp; Advertising (Google AdMob)</h3>
+        <p>The free version of the Application uses <strong>Google AdMob</strong> (provided by Google LLC) to display banner and interstitial advertisements. If you activate the "No Ads" option in the in-game shop, all ad requests and ad displays are permanently disabled.</p>
+        <p>To serve ads, cap ad frequency, detect fraud, and measure ad performance, the Google Mobile Ads SDK may automatically collect and process certain device and usage data, including:</p>
+        <ul>
+            <li>Google Advertising ID (<code>com.google.android.gms.permission.AD_ID</code>);</li>
+            <li>IP address (used to estimate general/coarse location);</li>
+            <li>Device technical information (device model, Android OS version, system language, screen dimensions);</li>
+            <li>Ad interaction events (impressions, clicks) and crash/performance diagnostics.</li>
+        </ul>
+        <p>Learn more about how Google collects and processes data in partner apps:</p>
+        <ul>
+            <li>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+            <li>How Google uses information from sites or apps that use our services: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">https://policies.google.com/technologies/partner-sites</a></li>
+        </ul>
+
+        <h3>4. Managing Your Advertising ID &amp; Opt-Out Choices</h3>
+        <p>You can reset or delete your device's Advertising ID or opt out of personalized advertising at any time in your Android device settings: <strong>Settings &rarr; Google &rarr; Ads</strong> (or <strong>Privacy &rarr; Ads</strong>). You may also disable all advertisements inside the Application via the in-game Shop.</p>
+
+        <h3>5. Children's Privacy</h3>
+        <p>The Application does not knowingly collect any personal information from children under the age of 13 (or the applicable age of digital consent in your jurisdiction). If you are a parent or guardian and believe that your child has provided personal data to us, please contact us so that we can promptly delete such information.</p>
+
+        <h3>6. Data Security</h3>
+        <p>All network communication performed by the Google Mobile Ads SDK is encrypted in transit using HTTPS/TLS. The developer does not maintain external user databases and does not sell or rent user information to third parties.</p>
+
+        <h3>7. Changes to This Privacy Policy</h3>
+        <p>We may update this Privacy Policy from time to time to reflect app updates or regulatory changes. Any updates will be posted on this page with an updated effective date.</p>
+
+        <h3>8. Contact Us</h3>
+        <p>If you have any questions or concerns regarding this Privacy Policy or the <strong>Rhythm Road</strong> Application, please contact the developer via the support email listed on the official Google Play Store listing page.</p>
+    </section>
+
+    <footer>
+        &copy; 2026 Rhythm Road (`com.rhythmroad`). All rights reserved.
+    </footer>
+</div>
+
+<script>
+    function setLang(lang) {
+        var langs = ['ru', 'uk', 'en'];
+        for (var i = 0; i < langs.length; i++) {
+            var code = langs[i];
+            var sec = document.getElementById('lang-' + code);
+            var btn = document.getElementById('btn-' + code);
+            if (code === lang) {
+                sec.classList.add('active');
+                btn.classList.add('active');
+                document.documentElement.lang = code;
+            } else {
+                sec.classList.remove('active');
+                btn.classList.remove('active');
+            }
+        }
+    }
+
+    (function autoDetectLanguage() {
+        var params = new URLSearchParams(window.location.search);
+        var qLang = params.get('lang');
+        if (qLang && ['ru', 'uk', 'en'].indexOf(qLang.toLowerCase()) !== -1) {
+            setLang(qLang.toLowerCase());
+            return;
+        }
+        var navLang = (navigator.language || navigator.userLanguage || 'ru').toLowerCase();
+        if (navLang.indexOf('uk') === 0) {
+            setLang('uk');
+        } else if (navLang.indexOf('ru') === 0) {
+            setLang('ru');
+        } else {
+            setLang('en');
+        }
+    })();
+</script>
+
+</body>
+</html>
