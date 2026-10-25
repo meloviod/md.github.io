@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Spend 1 Euro</title>
+    <style>
+        :root {
+            --primary: #003399;
+            --primary-dark: #001f5c;
+            --accent-gold: #FFCC00;
+            --gold-dark: #D4AF37;
+            --bg-light: #F8FAFC;
+            --surface: #FFFFFF;
+            --text-main: #1E293B;
+            --text-muted: #64748B;
+            --border: #E2E8F0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+            color: #FFFFFF;
+            padding: 50px 20px 40px;
+            text-align: center;
+            border-bottom: 4px solid var(--accent-gold);
+            position: relative;
+        }
+
+        .header-stars {
+            color: var(--accent-gold);
+            font-size: 24px;
+            letter-spacing: 6px;
+            margin-bottom: 12px;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: #E2E8F0;
+            font-size: 1rem;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 40px auto;
+            padding: 0 24px;
+        }
+
+        .card {
+            background: var(--surface);
+            border-radius: 14px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 20px rgba(0, 31, 92, 0.05);
+            padding: 36px;
+            margin-bottom: 28px;
+        }
+
+        h2 {
+            color: var(--primary-dark);
+            font-size: 1.4rem;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 2px solid #EDF2F7;
+            padding-bottom: 8px;
+        }
+
+        h2::before {
+            content: "★";
+            color: var(--accent-gold);
+            font-size: 1.1rem;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #334155;
+            font-size: 1rem;
+        }
+
+        ul {
+            margin: 0 0 18px 24px;
+            color: #334155;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #FEF3C7;
+            color: #92400E;
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 3px 10px;
+            border-radius: 999px;
+            margin-bottom: 12px;
+            border: 1px solid #FCD34D;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        a:hover {
+            color: var(--gold-dark);
+        }
+
+        .highlight-box {
+            background: #F0F7FF;
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 0 10px 10px 0;
+            margin: 18px 0;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            background: var(--surface);
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.7rem;
+            }
+            .card {
+                padding: 24px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-stars">★ ★ ★ ★ ★</div>
+    <h1>Privacy Policy</h1>
+    <p>Spend 1 Euro ("Потрать 1 евро")</p>
+    <p style="font-size: 0.85rem; margin-top: 6px; color: #CBD5E1;">Last updated: October 2026</p>
+</header>
+
+<div class="container">
+    <div class="card">
+        <span class="badge">European Standard</span>
+        <h2>1. Introduction</h2>
+        <p>This Privacy Policy describes how <strong>Spend 1 Euro</strong> ("we", "our", or "the application") handles information when you download, install, and use our mobile application available on Google Play.</p>
+        <p>We respect your privacy and adhere to the strict data protection principles of the European Union General Data Protection Regulation (<strong>GDPR</strong>) and Google Play Developer Policies. We operate on a principle of <strong>data minimization</strong>: we do not collect, store, or transmit your personal identification information on any private servers.</p>
+    </div>
+
+    <div class="card">
+        <h2>2. Data Collection and Usage</h2>
+        <p>The core functionality of Spend 1 Euro does not require registration, personal profiles, email addresses, phone numbers, or access to your contacts, camera, microphone, or precise geolocation.</p>
+        
+        <div class="highlight-box">
+            <strong>Local Storage (On Your Device):</strong>
+            All user progression data (such as the number of earned stars ★, game scores in European mini-games, and spending counters) is stored locally on your device using Android SharedPreferences. This data never leaves your device.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>3. Third-Party Services and Advertising</h2>
+        <p>The application integrates reputable, industry-standard third-party SDKs to facilitate advertising and store billing:</p>
+        <ul>
+            <li>
+                <strong>Google AdMob (Google LLC):</strong> 
+                Used to display optional rewarded video advertisements. When you choose to watch an ad ("Посмотри"), AdMob may collect and process device identifiers, advertising ID (AAID), diagnostic data, and coarse location data to deliver relevant ads and detect fraud. 
+                <br>
+                For details on how Google processes data, please review the 
+                <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Advertising Privacy Policy</a>.
+            </li>
+            <li>
+                <strong>Google Play In-App Billing (Google LLC):</strong> 
+                Used for processing purchases (e.g., initial app purchase and "Потрать еще" / "Spend More"). All payment transactions and credit card data are handled entirely and securely by Google Play. We do not have access to, nor do we store, your credit card numbers or financial credentials.
+                <br>
+                Please consult the 
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.
+            </li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>4. General Data Protection Regulation (GDPR) Compliance</h2>
+        <p>For users located within the European Economic Area (EEA), the United Kingdom, and Switzerland:</p>
+        <ul>
+            <li><strong>Legal Basis:</strong> Data processed by third-party ad networks is processed based on your consent or legitimate interest in maintaining application security.</li>
+            <li><strong>User Rights:</strong> You have the right to reset or delete your advertising identifier at any time via your Android device settings (<em>Settings &gt; Google &gt; Ads &gt; Delete advertising ID</em>).</li>
+            <li><strong>Data Retention:</strong> We do not host remote databases of user activity. Clearing the app's cache or uninstalling the app permanently purges all local data.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>5. Children's Privacy</h2>
+        <p>Our application is not targeted at children under the age of 13 (or under 16 in certain EU jurisdictions). We do not knowingly collect personal data from children. If you believe that a child has provided personal information through third-party services within our app, please contact us so appropriate measures can be taken.</p>
+    </div>
+
+    <div class="card">
+        <h2>6. Security</h2>
+        <p>We value your trust. Since we do not transmit personal data to remote servers, your primary interaction data remains solely on your physical device and within the secured ecosystem of Google Play Services.</p>
+    </div>
+
+    <div class="card">
+        <h2>7. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date. We encourage you to review this policy periodically.</p>
+    </div>
+
+    <div class="card">
+        <h2>8. Contact Us</h2>
+        <p>If you have questions, feedback, or inquiries regarding this Privacy Policy, please contact our support team at:</p>
+        <p><strong>Email:</strong> <a href="mailto:support@spendeuro.app">support@spendeuro.app</a></p>
+        <p><strong>Application:</strong> Spend 1 Euro (com.spendeuro.spend)</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Spend 1 Euro. All rights reserved. Built with European prestige and care.</p>
+</footer>
+
+</body>
+</html>
