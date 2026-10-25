@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Политика конфиденциальности — Деберц Таблица</title>
+    <style>
+        :root {
+            --bg-dark: #0D111A;
+            --surface-card: #161E2E;
+            --surface-border: #25334D;
+            --surface-inner: #101623;
+            --accent-cyan: #00D2FF;
+            --accent-coral: #FF4D6D;
+            --accent-emerald: #10B981;
+            --text-primary: #F1F5F9;
+            --text-secondary: #94A3B8;
+            --text-muted: #64748B;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.65;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 32px 16px;
+            background: var(--surface-card);
+            border: 1px solid var(--surface-border);
+            border-radius: 18px;
+            margin-bottom: 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .suits {
+            font-size: 28px;
+            letter-spacing: 8px;
+            margin-bottom: 8px;
+        }
+
+        .suit-red { color: #FF4D6D; }
+        .suit-dark { color: #94A3B8; }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: var(--accent-cyan);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .update-date {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 10px;
+        }
+
+        .content-card {
+            background: var(--surface-card);
+            border: 1px solid var(--surface-border);
+            border-radius: 18px;
+            padding: 32px 28px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+        }
+
+        section {
+            margin-bottom: 28px;
+        }
+
+        section:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: var(--accent-cyan);
+            border-bottom: 1px solid var(--surface-border);
+            padding-bottom: 8px;
+            margin-bottom: 14px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        p {
+            font-size: 15px;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 12px;
+        }
+
+        li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 8px;
+            font-size: 14.5px;
+            color: var(--text-secondary);
+        }
+
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 8px;
+            color: var(--accent-cyan);
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 1;
+        }
+
+        .highlight-box {
+            background: var(--surface-inner);
+            border: 1px solid var(--surface-border);
+            border-left: 4px solid var(--accent-cyan);
+            border-radius: 10px;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #70E5FF;
+            text-decoration: underline;
+        }
+
+        .contact-card {
+            background: var(--surface-inner);
+            border: 1px solid var(--surface-border);
+            border-radius: 14px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 16px;
+        }
+
+        .email-btn {
+            display: inline-block;
+            margin-top: 10px;
+            background: linear-gradient(180deg, #00D2FF 0%, #0088CC 100%);
+            color: #FFFFFF;
+            padding: 10px 24px;
+            border-radius: 25px;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 4px 14px rgba(0, 210, 255, 0.35);
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+
+        .email-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 210, 255, 0.5);
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 32px;
+            padding: 16px;
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 16px 10px; }
+            .content-card { padding: 22px 18px; }
+            h1 { font-size: 23px; }
+            h2 { font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="suits">
+            <span class="suit-dark">♠</span>
+            <span class="suit-red">♥</span>
+            <span class="suit-red">♦</span>
+            <span class="suit-dark">♣</span>
+        </div>
+        <h1>Политика конфиденциальности</h1>
+        <div class="subtitle">Мобильное приложение «Деберц Таблица»</div>
+        <div class="update-date">Дата вступления в силу: 14 октября 2026 года</div>
+    </header>
+
+    <div class="content-card">
+
+        <section>
+            <h2>1. Общие положения</h2>
+            <p>
+                Настоящая Политика конфиденциальности описывает, как мобильное приложение 
+                <strong>«Деберц Таблица»</strong> (далее — «Приложение») обрабатывает и защищает данные пользователей. 
+                Мы с уважением относимся к вашей конфиденциальности и стремимся обеспечить максимальную безопасность 
+                и прозрачность при использовании Приложения.
+            </p>
+            <p>
+                Используя Приложение, вы соглашаетесь с условиями сбора и использования информации, 
+                изложенными в данной Политике.
+            </p>
+        </section>
+
+        <section>
+            <h2>2. Сбор и хранение локальных данных</h2>
+            <div class="highlight-box">
+                <p>
+                    <strong>Приложение не требует регистрации</strong>, ввода учетных записей, 
+                    номеров телефонов или паспортных данных. Мы не собираем личную идентификационную информацию (PII).
+                </p>
+            </div>
+            <p>В процессе работы Приложение сохраняет исключительно игровые данные:</p>
+            <ul>
+                <li>История очков и сыгранных раундов команд («МЫ» и «ОНИ»).</li>
+                <li>Записи о штрафах, байтах и висяках.</li>
+                <li>Дата и время завершения партий.</li>
+                <li>Выбранная целевая сумма игры (162, 222, 302, 322, 501, 1001 и т.д.).</li>
+            </ul>
+            <p>
+                Все эти данные сохраняются <strong>исключительно локально на вашем устройстве</strong> 
+                во внутренней базе данных SQLite. Они не передаются на внешние сервера разработчика. 
+                Вы можете в любой момент удалить историю игр внутри интерфейса приложения или очистив данные приложения в настройках Android.
+            </p>
+        </section>
+
+        <section>
+            <h2>3. Сторонние сервисы и реклама (Google AdMob)</h2>
+            <p>
+                Для поддержания бесплатного доступа в Приложение интегрирован рекламный сервис 
+                <strong>Google AdMob</strong> (Google Play Services Ads).
+            </p>
+            <p>
+                Сервис Google AdMob может автоматически собирать и обрабатывать определенные обезличенные технические данные 
+                для показа релевантной рекламы и предотвращения мошенничества:
+            </p>
+            <ul>
+                <li>Рекламный идентификатор устройства (Google Advertising ID / GAID).</li>
+                <li>IP-адрес (используется для приблизительного определения страны или региона).</li>
+                <li>Сведения об устройстве: модель, версия операционной системы Android, разрешение экрана, язык интерфейса.</li>
+                <li>Данные о взаимодействии с рекламными объявлениями (просмотры, клики).</li>
+                <li>Диагностические данные и журналы сбоев (crash logs).</li>
+            </ul>
+            <p>
+                Обработка указанных данных регулируется политикой конфиденциальности компании Google:
+            </p>
+            <ul>
+                <li>
+                    Политика конфиденциальности Google: 
+                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>
+                </li>
+                <li>
+                    Использование данных Google в приложениях партнеров: 
+                    <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">https://policies.google.com/technologies/partner-sites</a>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Управление рекламой и отказ от персонализации</h2>
+            <p>
+                Вы имеете полное право ограничить или отключить персонализированную рекламу непосредственно на своем Android-устройстве:
+            </p>
+            <ul>
+                <li>Перейдите в <strong>Настройки устройства &rarr; Google &rarr; Реклама</strong>.</li>
+                <li>Включите опцию <em>«Удалить рекламный идентификатор»</em> или <em>«Отключить персонализацию рекламы»</em>.</li>
+                <li>При необходимости вы также можете сбросить рекламный идентификатор.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Конфиденциальность детей (COPPA / GDPR-K)</h2>
+            <p>
+                Приложение не предназначено специально для детей в возрасте до 13 лет (или минимального возраста, 
+                установленного законодательством вашей страны), и мы сознательно не собираем никаких персональных данных детей. 
+                Если вам стало известно, что ребенок предоставил какую-либо личную информацию, пожалуйста, свяжитесь с нами, 
+                и мы незамедлительно примем меры.
+            </p>
+        </section>
+
+        <section>
+            <h2>6. Безопасность данных</h2>
+            <p>
+                Мы заботимся о безопасности вашей информации. Вся связь со сторонними сервисами Google осуществляется 
+                по защищенным протоколам шифрования (HTTPS / TLS). Игровые данные хранятся в изолированном песочном хранилище (sandbox) 
+                Android-приложения и недоступны другим неавторизованным приложениям.
+            </p>
+        </section>
+
+        <section>
+            <h2>7. Изменения в Политике конфиденциальности</h2>
+            <p>
+                Мы можем время от времени обновлять нашу Политику конфиденциальности в связи с изменением функционала 
+                или требований законодательства. Актуальная версия всегда публикуется на этой веб-странице с указанием 
+                даты последнего обновления. Мы рекомендуем периодически просматривать данную страницу.
+            </p>
+        </section>
+
+        <section>
+            <h2>8. Контактная информация</h2>
+            <p>
+                Если у вас есть вопросы, предложения или замечания относительно настоящей Политики конфиденциальности 
+                или работы приложения, пожалуйста, свяжитесь с разработчиком:
+            </p>
+            <div class="contact-card">
+                <p>Электронная почта для связи:</p>
+                <a href="mailto:dim_mel@i.ua" class="email-btn">dim_mel@i.ua</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Деберц Таблица. Все права защищены.</p>
+        <p>Разработчик: <a href="mailto:dim_mel@i.ua">dim_mel@i.ua</a></p>
+    </footer>
+
+</div>
+
+</body>
+</html>
