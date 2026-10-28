@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Smart Resume Assistant</title>
+    <style>
+        :root {
+            --primary: #1d4ed8;
+            --primary-hover: #1e40af;
+            --primary-light: #eff6ff;
+            --success: #059669;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --border: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+            --radius: 12px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #3b82f6;
+                --primary-hover: #60a5fa;
+                --primary-light: #1e293b;
+                --success: #10b981;
+                --bg: #0b0f19;
+                --card-bg: #131b2e;
+                --text-main: #f8fafc;
+                --text-muted: #94a3b8;
+                --border: #1e293b;
+                --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3);
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding-bottom: 60px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 50%, #0284c7 100%);
+            color: white;
+            padding: 48px 24px;
+            text-align: center;
+        }
+
+        .header-content {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            padding: 6px 16px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .header-subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 640px;
+            margin: 0 auto 20px auto;
+        }
+
+        .meta-info {
+            font-size: 0.9rem;
+            opacity: 0.75;
+        }
+
+        /* Language Switcher Bar */
+        .lang-switch-bar {
+            max-width: 860px;
+            margin: -24px auto 28px auto;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 0 16px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .lang-btn {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            padding: 10px 20px;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .lang-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            transform: translateY(-1px);
+        }
+
+        .lang-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        /* Container */
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Highlights Card */
+        .summary-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-bottom: 32px;
+            box-shadow: var(--shadow);
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .summary-item {
+            background: var(--primary-light);
+            border-radius: 8px;
+            padding: 16px;
+        }
+
+        .summary-item strong {
+            display: block;
+            color: var(--primary);
+            font-size: 15px;
+            margin-bottom: 6px;
+        }
+
+        .summary-item p {
+            font-size: 13.5px;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        /* Policy Section Content */
+        .policy-section {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: var(--shadow);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 20px 0 10px 0;
+            color: var(--text-main);
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-muted);
+        }
+
+        ul {
+            margin: 0 0 16px 24px;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .badge-tag {
+            display: inline-block;
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 2px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 6px;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            margin: 16px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: var(--primary-light);
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-muted);
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, rgba(29, 78, 216, 0.08) 0%, rgba(2, 132, 199, 0.08) 100%);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            text-align: center;
+            margin-top: 32px;
+        }
+
+        .contact-box a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 48px;
+        }
+
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="app-badge">📄 Official Privacy Statement</div>
+        <h1 id="app-title">Privacy Policy</h1>
+        <p class="header-subtitle" id="app-sub">Smart Resume Assistant & CV Builder (com.dmitry.myresume)</p>
+        <div class="meta-info">Last updated: October 28, 2026 • Effective Date: October 28, 2026</div>
+    </div>
+</header>
+
+<!-- Language Switcher -->
+<div class="lang-switch-bar">
+    <button class="lang-btn active" onclick="switchLanguage('en')">🇬🇧 English</button>
+    <button class="lang-btn" onclick="switchLanguage('uk')">🇺🇦 Українська</button>
+    <button class="lang-btn" onclick="switchLanguage('ru')">🇷🇺 Русский</button>
+</div>
+
+<div class="container">
+
+    <!-- ======================================================== -->
+    <!-- ENGLISH VERSION (DEFAULT) -->
+    <!-- ======================================================== -->
+    <div id="lang-en" class="lang-content active">
+
+        <div class="summary-card">
+            <h2>🛡️ Key Highlights & Data Safety</h2>
+            <p>We believe in absolute transparency and zero unnecessary data collection. Here is our policy in simple terms:</p>
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <strong>100% Local Storage</strong>
+                    <p>Your resume data, contacts, work experience, and personal details never leave your device. We do not operate remote servers storing your CV.</p>
+                </div>
+                <div class="summary-item">
+                    <strong>No GPS Tracking</strong>
+                    <p>Regional adaptation (phone formats, currencies, sample cities) uses local SIM/locale codes without requesting GPS location permissions.</p>
+                </div>
+                <div class="summary-item">
+                    <strong>Export You Control</strong>
+                    <p>PDF export and cover letters are rendered entirely on your device and saved only to locations you explicitly choose.</p>
+                </div>
+                <div class="summary-item">
+                    <strong>Ad-Free Option</strong>
+                    <p>Google AdMob displays standard advertisements, which can be removed permanently for a one-time purchase of $1.00.</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="policy-section">
+            <h2>1. Introduction</h2>
+            <p>
+                This Privacy Policy applies to the mobile application <strong>Smart Resume Assistant & CV Builder</strong> 
+                (Package ID: <code>com.dmitry.myresume</code>), developed by Dmitry. This document informs you regarding our policies 
+                with the collection, use, and disclosure of Personal Information for anyone using our Application.
+            </p>
+            <p>
+                By downloading, installing, or using the Application, you agree to the collection and use of information in accordance 
+                with this policy.
+            </p>
+        </section>
+
+        <section class="policy-section">
+            <h2>2. Information Collection and Use</h2>
+            
+            <h3>A. Information You Provide in Resumes</h3>
+            <p>
+                When creating or editing a resume, you may input personal data including your full name, email address, phone number, 
+                city, work history, education, skills, and languages.
+            </p>
+            <p>
+                <strong>Important:</strong> All information you enter is stored exclusively in private local storage on your device 
+                using Android's native <code>SharedPreferences</code> and SQLite/internal files. <strong>We do not upload, sync, or transmit 
+                your resume contents to any external servers or third-party cloud services.</strong>
+            </p>
+
+            <h3>B. Regional Format Detection (No GPS Location)</h3>
+            <p>
+                To provide convenient telephone masks, salary currency symbols (e.g. ₴, $, £, €, ₸), and popular local university presets, 
+                the application queries the device's ISO country code through standard Android system APIs (<code>TelephonyManager</code> SIM/network 
+                country code and <code>Locale.getDefault().getCountry()</code>). 
+            </p>
+            <p>
+                The Application <strong>does not request or access fine or coarse GPS coordinates</strong>. You can freely change your active region 
+                at any time via the in-app country selector.
+            </p>
+
+            <h3>C. Third-Party Services</h3>
+            <p>The Application uses third-party services that may collect information used to identify you:</p>
+            
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Partner / Service</th>
+                            <th>Purpose</th>
+                            <th>Data Collected</th>
+                            <th>Privacy Policy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Google AdMob</strong></td>
+                            <td>Displaying interstitial and banner advertisements</td>
+                            <td>Advertising ID (AAID), diagnostic metrics, coarse IP-derived region</td>
+                            <td><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Ads Privacy</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Google Play In-App Billing</strong></td>
+                            <td>Processing the "Remove Ads" one-time purchase ($1.00 USD)</td>
+                            <td>Purchase tokens, transaction status (handled securely by Google)</td>
+                            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="policy-section">
+            <h2>3. Permissions Requested</h2>
+            <p>The Application requests only the minimal permissions necessary for core operation:</p>
+            <ul>
+                <li><code>android.permission.INTERNET</code>: Required for Google AdMob advertisement delivery and checking Google Play In-App Purchase status.</li>
+                <li><code>android.permission.ACCESS_NETWORK_STATE</code>: Used by AdMob to verify network availability before requesting advertisements.</li>
+            </ul>
+            <p>No storage permissions, camera permissions, or location permissions are required for the standard operation of the app.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2>4. Data Retention and Deletion</h2>
+            <p>
+                Because all resume data is retained exclusively on your device, you have complete and instantaneous control over your data:
+            </p>
+            <ul>
+                <li><strong>Deletion within App:</strong> You can delete any individual resume or clear resume fields directly inside the app interface.</li>
+                <li><strong>Clear All Data:</strong> Clearing app storage in your Android device settings (<em>Settings &gt; Apps &gt; Smart Resume &gt; Clear Storage</em>) permanently wipes all stored resumes.</li>
+                <li><strong>Uninstalling:</strong> Uninstalling the application automatically deletes all locally saved resumes and application preferences.</li>
+            </ul>
+        </section>
+
+        <section class="policy-section">
+            <h2>5. Children's Privacy</h2>
+            <p>
+                These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from 
+                children under 13. In the case we discover that a child under 13 has provided personal information, we immediately remove it from our records.
+            </p>
+        </section>
+
+        <section class="policy-section">
+            <h2>6. Security</h2>
+            <p>
+                We value your trust in creating your professional resume through our application. Because all resume files remain strictly 
+                in local device sandboxing, your sensitive career information is protected by Android's internal application sandboxing architecture. 
+                Please ensure your device is protected by a screen lock or biometric authentication.
+            </p>
+        </section>
+
+        <section class="policy-section">
+            <h2>7. Changes to This Privacy Policy</h2>
+            <p>
+                We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. 
+                We will notify you of any changes by posting the new Privacy Policy on this page with an updated effective date.
+            </p>
+        </section>
+
+        <section class="contact-box">
+            <h2>8. Contact Us</h2>
+            <p>If you have any questions or suggestions regarding this Privacy Policy or data handling in Smart Resume Assistant, please contact us at:</p>
+            <p><strong>Email:</strong> <a href="mailto:support@dmitry-apps.com">support@dmitry-apps.com</a></p>
+            <p style="font-size: 13px; margin-top: 8px;">Developer: Dmitry • Application ID: <code>com.dmitry.myresume</code></p>
+        </section>
+
+    </div>
+
+
+    <!-- ======================================================== -->
+    <!-- UKRAINIAN VERSION -->
+    <!-- ======================================================== -->
+    <div id="lang-uk" class="lang-content">
+
+        <div class="summary-card">
+            <h2>🛡️ Головне про конфіденційність та безпеку даних</h2>
+            <p>Ми підтримуємо повну прозорість та відсутність зайвого збору інформації. Коротко про головне:</p>
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <strong>100% Локальне збереження</strong>
+                    <p>Усі дані резюме, досвід роботи, контакти та персональна інформація зберігаються тільки на вашому телефоні та ніколи не передаються на зовнішні сервери.</p>
+                </div>
+                <div class="summary-item">
+                    <strong>Без GPS-відстеження</strong>
+                    <p>Адаптація під країну (формат телефону, валюта ₴, міста та виші) базується на коді SIM/регіоні системи без доступу до точної геолокації.</p>
+                </div>
+                <div class="summary-item">
+                    <strong>Повний контроль експорту</strong>
+                    <p>Створення PDF та супровідних листів формується виключно на телефоні. Ви самі обираєте, куди зберегти документ чи надіслати файл.</p>
+                </div>
+                <div class="summary-item">
+                    <strong>Відключення реклами</strong>
+                    <p>Додаток використовує стандартні блоки Google AdMob, які можна повністю та назавжди відключити одноразовою покупкою за $1.00.</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="policy-section">
+            <h2>1. Загальні положення</h2>
+            <p>
+                Ця Політика конфіденційності діє для мобільного додатка <strong>Розумний помічник резюме (Smart Resume Assistant)</strong> 
+                (Ідентифікатор пакета: <code>com.dmitry.myresume</code>), розробленого Dmitry. Цей документ роз'яснює принципи 
+                обробки персональної інформації під час використання нашого додатку.
+            </p>
+            <p>
+                Встановлюючи та використовуючи додаток, ви погоджуєтеся зі збором та використанням інформації згідно з цією політикою.
+            </p>
+        </section>
+
+        <section class="policy-section">
+            <h2>2. Збір та використання інформації</h2>
+            
+            <h3>А. Дані, які ви вказуєте в резюме</h3>
+            <p>
+                Під час створення або редагування резюме ви можете вносити персональні дані: ПІБ, адресу електронної пошти, номер телефону, 
+                місто проживання, досвід роботи, освіту, навички та мови.
+            </p>
+            <p>
+                <strong>Важливо:</strong> Уся ця інформація зберігається виключно в захищеному локальному сховищі вашого смартфона 
+                (через нативні механізми Android). <strong>Ми не завантажуємо, не синхронізуємо та не надсилаємо зміст ваших резюме 
+                на жодні віддалені сервери.</strong>
+            </p>
+
+            <h3>Б. Визначення регіональних форматів (без GPS)</h3>
+            <p>
+                Для правильного відображення телефонної маски (+380...), валюти (₴ UAH), міст та провідних університетів додаток зчитує 
+                двобуквений код країни з SIM-карти або мовних налаштувань смартфона.
+            </p>
+            <p>
+                Додаток <strong>не вимагає та не використовує дозволи на точну або приблизну GPS-геолокацію</strong>. Ви можете будь-коли 
+                змінити країну вручну за допомогою кнопки вибору регіону в додатку.
+            </p>
+
+            <h3>В. Сторонні сервіси</h3>
+            <p>Додаток інтегрує офіційні сервіси Google, які можуть збирати технічну інформацію:</p>
+            <ul>
+                <li><strong>Google AdMob:</strong> Показ міжсторінкової реклами. Може збирати рекламний ідентифікатор Google (AAID) та технічну діагностику для оптимізації оголошень.</li>
+                <li><strong>Google Play Billing:</strong> Обробка безпечної одноразової покупки «Вимкнути рекламу» ($1.00 USD). Платіжні дані обробляються виключно компанією Google і не доступні розробнику.</li>
+            </ul>
+        </section>
+
+        <section class="policy-section">
+            <h2>3. Дозволи додатка (Permissions)</h2>
+            <ul>
+                <li><code>INTERNET</code>: Необхідний для показу рекламних оголошень AdMob та верифікації статусу покупки в Google Play.</li>
+                <li><code>ACCESS_NETWORK_STATE</code>: Використовується AdMob для перевірки наявності інтернет-з'єднання.</li>
+            </ul>
+            <p>Додаток не вимагає доступу до контактів, камери, файлової системи пристрою або GPS.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2>4. Видалення та керування даними</h2>
+            <p>Ви маєте повний контроль над своїми резюме:</p>
+            <ul>
+                <li><strong>Видалення в додатку:</strong> Ви можете видалити будь-яке резюме або очистити поля одним натисканням.</li>
+                <li><strong>Очищення пам'яті:</strong> Очищення даних додатка в налаштуваннях Android (<em>Налаштування &gt; Додатки &gt; Помічник резюме &gt; Пам'ять &gt; Очистити дані</em>) безповоротно видаляє всі резюме.</li>
+                <li><strong>Видалення додатка:</strong> Видалення програми з пристрою автоматично видаляє всі створені локальні файли.</li>
+            </ul>
+        </section>
+
+        <section class="policy-section">
+            <h2>5. Конфіденційність дітей</h2>
+            <p>
+                Додаток не орієнтований на осіб віком до 13 років і не здійснює свідомого збору персональних даних дітей.
+            </p>
+        </section>
+
+        <section class="contact-box">
+            <h2>6. Контакти для зв'язку</h2>
+            <p>Якщо у вас виникли запитання чи пропозиції щодо цієї Політики конфіденційності, напишіть нам:</p>
+            <p><strong>Email:</strong> <a href="mailto:support@dmitry-apps.com">support@dmitry-apps.com</a></p>
+            <p style="font-size: 13px; margin-top: 8px;">Розробник: Dmitry • Ідентифікатор додатка: <code>com.dmitry.myresume</code></p>
+        </section>
+
+    </div>
+
+
+    <!-- ======================================================== -->
+    <!-- RUSSIAN VERSION -->
+    <!-- ======================================================== -->
+    <div id="lang-ru" class="lang-content">
+
+        <div class="summary-card">
+            <h2>🛡️ Главное о конфиденциальности и безопасности</h2>
+            <p>Мы придерживаемся политики абсолютной открытости и отсутствия скрытого сбора данных:</p>
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <strong>100% Локальное хранение</strong>
+                    <p>Все резюме, персональные данные, контакты и опыт работы хранятся только в памяти вашего устройства и никогда не передаются на сторонние серверы.</p>
+                </div>
+                <div class="summary-item">
+                    <strong>Без GPS-геолокации</strong>
+                    <p>Подбор телефонных масок, образцов городов, вузов и валют основывается на коде SIM-карты или системном языке без запроса GPS-разрешений.</p>
+                </div>
+                <div class="summary-item">
+                    <strong>Контроль экспорта</strong>
+                    <p>Генерация PDF-документов и сопроводительных писем происходит полностью оффлайн на устройстве. Вы сами решаете, куда сохранить файл.</p>
+                </div>
+                <div class="summary-item">
+                    <strong>Отключение рекламы</strong>
+                    <p>Рекламные блоки Google AdMob можно навсегда отключить встроенной разовой покупкой за $1.00 USD.</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="policy-section">
+            <h2>1. Общие положения</h2>
+            <p>
+                Настоящая Политика конфиденциальности регулирует порядок обработки информации в мобильном приложении 
+                <strong>Умный помощник резюме (Smart Resume Assistant)</strong> (идентификатор пакета: <code>com.dmitry.myresume</code>), 
+                разработанном Dmitry.
+            </p>
+            <p>
+                Используя Приложение, вы подтверждаете согласие с условиями настоящей Политики конфиденциальности.
+            </p>
+        </section>
+
+        <section class="policy-section">
+            <h2>2. Сбор и обработка информации</h2>
+            
+            <h3>А. Данные, вносимые в резюме</h3>
+            <p>
+                При заполнении резюме вы указываете личные данные: ФИО, телефон, email, город, опыт работы, образование, навыки и знание языков.
+            </p>
+            <p>
+                <strong>Внимание:</strong> Все эти сведения сохраняются исключительно в изолированной локальной памяти вашего мобильного устройства. 
+                <strong>Мы не передаем, не синхронизируем и не собираем ваши резюме на каких-либо удаленных серверах.</strong>
+            </p>
+
+            <h3>Б. Региональные форматы (без использования GPS)</h3>
+            <p>
+                Для подстановки подходящего телефонного кода (+380, +7, +1 и т.д.), образцов городов, валют зарплаты и университетов приложение 
+                считывает стандартный ISO-код страны оператора SIM-карты или системную локаль устройства. 
+            </p>
+            <p>
+                Приложение <strong>не запрашивает и не использует доступ к геопозиции (GPS)</strong>. Вы можете в любой момент сменить 
+                регион вручную с помощью селектора страны в главном меню.
+            </p>
+
+            <h3>В. Сторонние интеграции</h3>
+            <p>В приложении задействованы стандартные модули от Google:</p>
+            <ul>
+                <li><strong>Google AdMob:</strong> Демонстрация межстраничной рекламы. Может использовать рекламный идентификатор Google (AAID) и технические параметры устройства для подбора объявлений.</li>
+                <li><strong>Google Play In-App Billing:</strong> Обработка безопасной покупки функции «Отключить рекламу» ($1.00). Данные банковских карт обрабатываются на защищенных серверах Google Play.</li>
+            </ul>
+        </section>
+
+        <section class="policy-section">
+            <h2>3. Системные разрешения Android</h2>
+            <ul>
+                <li><code>INTERNET</code>: Загрузка рекламных баннеров AdMob и проверка статуса покупки в Google Play.</li>
+                <li><code>ACCESS_NETWORK_STATE</code>: Проверка доступности сети перед показом рекламы.</li>
+            </ul>
+            <p>Приложение не требует доступа к камере, контактам телефонной книги или геопозиции.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2>4. Удаление и управление данными</h2>
+            <ul>
+                <li><strong>Удаление в приложении:</strong> Вы можете удалить любое созданное резюме прямо в списке «Мои резюме».</li>
+                <li><strong>Сброс данных:</strong> Очистка данных приложения в настройках Android (<em>Настройки &gt; Приложения &gt; Smart Resume &gt; Хранилище &gt; Стереть данные</em>) удаляет все сохраненные резюме.</li>
+                <li><strong>Удаление приложения:</strong> При удалении приложения с устройства удаляются все локальные данные.</li>
+            </ul>
+        </section>
+
+        <section class="policy-section">
+            <h2>5. Конфиденциальность несовершеннолетних</h2>
+            <p>
+                Приложение не предназначено для лиц младше 13 лет. Мы намеренно не осуществляем сбор персональной информации от детей.
+            </p>
+        </section>
+
+        <section class="contact-box">
+            <h2>6. Контактная информация</h2>
+            <p>Если у вас возникли вопросы относительно Политики конфиденциальности, пожалуйста, свяжитесь с нами:</p>
+            <p><strong>Email:</strong> <a href="mailto:support@dmitry-apps.com">support@dmitry-apps.com</a></p>
+            <p style="font-size: 13px; margin-top: 8px;">Разработчик: Dmitry • ID приложения: <code>com.dmitry.myresume</code></p>
+        </section>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Smart Resume Assistant. All rights reserved.</p>
+    <p style="margin-top: 4px;">Committed to Privacy &amp; Data Protection</p>
+</footer>
+
+<script>
+    function switchLanguage(lang) {
+        document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+        document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+
+        const activeContent = document.getElementById('lang-' + lang);
+        if (activeContent) {
+            activeContent.classList.add('active');
+        }
+
+        const buttons = document.querySelectorAll('.lang-btn');
+        if (lang === 'en') {
+            buttons[0].classList.add('active');
+            document.getElementById('app-title').textContent = "Privacy Policy";
+            document.getElementById('app-sub').textContent = "Smart Resume Assistant & CV Builder (com.dmitry.myresume)";
+        } else if (lang === 'uk') {
+            buttons[1].classList.add('active');
+            document.getElementById('app-title').textContent = "Політика конфіденційності";
+            document.getElementById('app-sub').textContent = "Розумний помічник резюме (com.dmitry.myresume)";
+        } else if (lang === 'ru') {
+            buttons[2].classList.add('active');
+            document.getElementById('app-title').textContent = "Политика конфиденциальности";
+            document.getElementById('app-sub').textContent = "Умный помощник резюме (com.dmitry.myresume)";
+        }
+    }
+</script>
+
+</body>
+</html>
