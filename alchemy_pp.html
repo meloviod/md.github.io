@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Alchemist of Color</title>
+  <style>
+    :root {
+      --bg-color: #0b1120;
+      --card-bg: #151f32;
+      --border-color: #2e3f5e;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-link: #38bdf8;
+      --accent-gold: #ffd13b;
+      --accent-purple: #818cf8;
+      --accent-green: #00e676;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.65;
+      padding: 24px 16px 60px;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    header {
+      background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
+      border: 1px solid var(--accent-purple);
+      border-radius: 20px;
+      padding: 28px 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-icon {
+      font-size: 36px;
+      line-height: 1;
+    }
+    .brand-title {
+      font-size: 24px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .brand-subtitle {
+      font-size: 13px;
+      color: var(--accent-gold);
+      font-weight: 600;
+    }
+    .lang-switcher {
+      display: flex;
+      background: #0f172a;
+      border: 1px solid var(--border-color);
+      border-radius: 50px;
+      padding: 4px;
+      gap: 4px;
+    }
+    .lang-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .lang-btn:hover {
+      color: #ffffff;
+    }
+    .lang-btn.active {
+      background: var(--accent-purple);
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(99, 102, 241, 0.4);
+    }
+    .meta-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 12.5px;
+      color: var(--text-muted);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 12px;
+    }
+    .meta-item strong {
+      color: var(--text-main);
+    }
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--accent-gold);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    p {
+      margin-bottom: 12px;
+      font-size: 14.5px;
+      color: #cbd5e1;
+    }
+    ul {
+      margin-left: 20px;
+      margin-bottom: 12px;
+      font-size: 14.5px;
+      color: #cbd5e1;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    strong {
+      color: #ffffff;
+    }
+    a {
+      color: var(--text-link);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: #7dd3fc;
+    }
+    .badge-pill {
+      display: inline-block;
+      padding: 2px 8px;
+      background: rgba(0, 230, 118, 0.15);
+      border: 1px solid var(--accent-green);
+      color: var(--accent-green);
+      border-radius: 6px;
+      font-size: 11.5px;
+      font-weight: 700;
+      margin-right: 4px;
+    }
+    footer {
+      text-align: center;
+      font-size: 12.5px;
+      color: var(--text-muted);
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-color);
+    }
+    .lang-content {
+      display: none;
+    }
+    .lang-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="header-top">
+        <div class="brand">
+          <div class="brand-icon">⚗️</div>
+          <div>
+            <div class="brand-title">Alchemist of Color</div>
+            <div class="brand-subtitle">com.alchemistofcolor • Privacy Policy</div>
+          </div>
+        </div>
+        <div class="lang-switcher">
+          <button class="lang-btn active" onclick="switchLanguage('en')">English</button>
+          <button class="lang-btn" onclick="switchLanguage('uk')">Українська</button>
+          <button class="lang-btn" onclick="switchLanguage('ru')">Русский</button>
+        </div>
+      </div>
+      <div class="meta-box">
+        <div class="meta-item"><strong>Application:</strong> Alchemist of Color (Merge 2048)</div>
+        <div class="meta-item"><strong>Package ID:</strong> <code>com.alchemistofcolor</code></div>
+        <div class="meta-item"><strong>Effective Date:</strong> November 4, 2026</div>
+        <div class="meta-item"><strong>Compliance:</strong> Google Play Store Policy, GDPR, COPPA</div>
+      </div>
+    </header>
+
+    <!-- ==================== ENGLISH CONTENT (DEFAULT) ==================== -->
+    <div id="content-en" class="lang-content active">
+      <div class="card">
+        <h2>1. Overview & Commitment</h2>
+        <p>This Privacy Policy explains how <strong>Alchemist of Color</strong> ("the Game", "we", "our", or "us", package ID <code>com.alchemistofcolor</code>) handles information when you play our game on Android mobile devices.</p>
+        <p>We respect your privacy. <strong>We do not collect, harvest, sell, or rent any personally identifiable information (PII)</strong> such as your name, personal email address, physical address, phone number, contacts, precise GPS location, photos, or biometric data.</p>
+      </div>
+
+      <div class="card">
+        <h2>2. Data Stored Locally on Your Device</h2>
+        <p>To provide a persistent, seamless puzzle gaming experience that functions completely offline without requiring an account or internet login, the Game stores non-personal game progress locally on your device:</p>
+        <ul>
+          <li><strong>Game Progression:</strong> High scores for each game mode (4×4, 5×5, 6×6, Quests, Blitz), current tile crucible layout, move counts, and active quest completion progress.</li>
+          <li><strong>Inventory & Palette:</strong> Discovered color pigments and cosmic elements (Tiers 1–12), synthesis statistics, in-game Gold Dust currency, and booster counts (Rewinds, Hammers, Pipettes, Rainbows).</li>
+          <li><strong>Game Settings:</strong> Sound and music toggles, selected user interface language, and ad-free entitlement status.</li>
+        </ul>
+        <p>This data is stored solely inside your device's private, sandbox application storage (via Android <code>SharedPreferences</code>). We do not transmit your game board state to external developer servers.</p>
+      </div>
+
+      <div class="card">
+        <h2>3. Third-Party Services & Monetization</h2>
+        <p>The Game integrates industry-standard Google Play development libraries to support ad-funded free play and optional digital purchases:</p>
+
+        <p><span class="badge-pill">AdMob</span> <strong>Google Mobile Ads (AdMob):</strong></p>
+        <p>The Game uses Google AdMob to display banner advertisements, interstitial transitions, and optional rewarded videos (e.g., "Second Wind" revives or bonus gold). Google AdMob may collect and process device technical data, such as:</p>
+        <ul>
+          <li>Device advertising identifiers (Google Advertising ID / GAID).</li>
+          <li>Approximate geographical location inferred from IP address (at country/city level).</li>
+          <li>App diagnostic information, crash logs, and ad interaction metrics to combat fraud and deliver relevant ads.</li>
+        </ul>
+        <p>You can review Google's privacy practices at: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy & Terms</a> and <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">How Google uses information from sites or apps</a>.</p>
+
+        <p style="margin-top: 14px;"><span class="badge-pill">Billing</span> <strong>Google Play In-App Billing:</strong></p>
+        <p>If you purchase optional digital goods (such as removing banner ads forever for $0.49 or purchasing alchemy starter bundles), the entire payment transaction is handled directly and securely by <strong>Google Play Billing Library 8.0+</strong>. We do not have access to, nor do we collect or store, your credit card numbers, billing addresses, or banking details.</p>
+      </div>
+
+      <div class="card">
+        <h2>4. Currency and SIM Information</h2>
+        <p>The Game references the country code associated with your device's cellular network (via Android <code>TelephonyManager.simCountryIso</code>) strictly on-device to format localized pricing indicators (such as showing prices in local currency like $, €, £, ₴, ₽, etc.) even when the device language differs from your location. This country ISO code is processed transiently on-device and is never transmitted or sold.</p>
+      </div>
+
+      <div class="card">
+        <h2>5. Children’s Privacy (COPPA & Family Policy)</h2>
+        <p>Alchemist of Color is a family-friendly color logic and puzzle game suitable for all ages. We do not knowingly solicit or collect personal information from children under the age of 13. The advertising served by Google AdMob complies with applicable Google Play Families and COPPA restrictions.</p>
+      </div>
+
+      <div class="card">
+        <h2>6. Data Retention, Control & Deletion Rights</h2>
+        <p>Because all gameplay state is stored on your own device, you have complete and immediate control over your data:</p>
+        <ul>
+          <li><strong>Resetting or Deleting Data:</strong> You can completely and irreversibly erase all stored game data at any time by going to your Android device <em>Settings &rarr; Apps &rarr; Alchemist of Color &rarr; Storage &rarr; Clear Data</em>, or by uninstalling the Game.</li>
+          <li><strong>Advertising Privacy:</strong> You can reset or delete your Google Advertising ID at any time via Android <em>Settings &rarr; Google &rarr; Ads</em>.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>7. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time to reflect product enhancements, legal updates, or changes in store policies. Any updates will be published directly on this page with an updated "Effective Date".</p>
+      </div>
+
+      <div class="card">
+        <h2>8. Contact Us</h2>
+        <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy or the game, please reach out to us at:</p>
+        <p><strong>Support & Developer Inquiries:</strong> <a href="mailto:alchemistofcolor@gmail.com">alchemistofcolor@gmail.com</a></p>
+      </div>
+    </div>
+
+    <!-- ==================== UKRAINIAN CONTENT ==================== -->
+    <div id="content-uk" class="lang-content">
+      <div class="card">
+        <h2>1. Загальні положення</h2>
+        <p>Ця Політика конфіденційності пояснює, як гра <strong>«Алхімік Кольору»</strong> (пакет <code>com.alchemistofcolor</code>) обробляє інформацію під час гри на пристроях Android.</p>
+        <p>Ми з великою повагою ставимося до вашої приватності. <strong>Ми не збираємо, не продаємо і не передаємо персональні ідентифікаційні дані (PII)</strong>, такі як ім'я, адреса, особиста електронна пошта, список контактів, точні GPS-координати чи біометричні дані.</p>
+      </div>
+
+      <div class="card">
+        <h2>2. Дані, що зберігаються локально на пристрої</h2>
+        <p>Для забезпечення безперервного ігрового процесу без обов'язкового підключення до Інтернету гра зберігає виключно технічний прогрес локально у захищеному сховищі вашого смартфона:</p>
+        <ul>
+          <li><strong>Ігровий прогрес:</strong> рекорди та очки для кожного режиму (4×4, 5×5, 6×6, Замовлення, Бліц), поточне розташування плиток у тиглі, кількість ходів та статус щоденних завдань.</li>
+          <li><strong>Колекція та Палітра:</strong> відкриті рідкісні пігменти та космічні елементи (Рівні 1–12), статистика синтезів, запас Золотого Пилку та кількість магічних інструментів (Відміна, Молот, Піпетка, Веселка).</li>
+          <li><strong>Налаштування:</strong> перемикачі звуку й музики, обрана мова інтерфейсу та статус вимкнення реклами.</li>
+        </ul>
+        <p>Ці дані зберігаються всередині системного сховища додатка (Android <code>SharedPreferences</code>) і не надсилаються на сторонні сервери розробника.</p>
+      </div>
+
+      <div class="card">
+        <h2>3. Сторонні сервіси та монетизація</h2>
+        <p>У додатку використовуються офіційні бібліотеки екосистеми Google Play:</p>
+
+        <p><span class="badge-pill">AdMob</span> <strong>Google Mobile Ads (AdMob):</strong></p>
+        <p>Гра використовує сервіс Google AdMob для показу банерної реклами, міжсторінкових оголошень та добровільного перегляду відео за винагороду («Друге дихання», додаткове золото). Google AdMob може обробляти технічні дані пристрою:</p>
+        <ul>
+          <li>Рекламний ідентифікатор Google (GAID).</li>
+          <li>Приблизне місцезнаходження за IP-адресою (на рівні країни чи регіону).</li>
+          <li>Діагностичні показники взаємодії з оголошеннями для запобігання шахрайству.</li>
+        </ul>
+        <p>Детальніше з політикою конфіденційності Google можна ознайомитися за посиланням: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Політика конфіденційності Google</a>.</p>
+
+        <p style="margin-top: 14px;"><span class="badge-pill">Billing</span> <strong>Google Play In-App Billing:</strong></p>
+        <p>Усі цифрові покупки (наприклад, вимкнення банера назавжди за 19 грн / $0.49 або придбання наборів золота) здійснюються виключно через захищений офіційний шлюз <strong>Google Play Billing Library 8.0+</strong>. Розробник гри не має доступу і не зберігає дані банківських карток чи платіжних реквізитів.</p>
+      </div>
+
+      <div class="card">
+        <h2>4. Інформація про SIM-картку та валюту</h2>
+        <p>Гра використовує системний код країни мобільного оператора (Android <code>simCountryIso</code>) виключно локально на пристрої для коректного відображення цін у грошовій одиниці країни користувача (наприклад, ₴, $, €, zł тощо), якщо мова смартфона відрізняється від місця перебування. Цей код не зберігається і нікуди не передається.</p>
+      </div>
+
+      <div class="card">
+        <h2>5. Захист приватності дітей</h2>
+        <p>Гра «Алхімік Кольору» не містить неприйнятного контенту, насилля чи азартних ігор і розрахована на широку сімейну аудиторію. Ми свідомо не збираємо жодних даних дітей віком до 13 років, а реклама відповідає вимогам Google Play Families та COPPA.</p>
+      </div>
+
+      <div class="card">
+        <h2>6. Видалення даних та керування</h2>
+        <p>Оскільки всі дані гри зберігаються локально на вашому пристрої, ви можете в будь-який момент повністю видалити їх:</p>
+        <ul>
+          <li><strong>Очищення прогресу:</strong> через системне меню телефону <em>Налаштування &rarr; Додатки &rarr; Алхімік Кольору &rarr; Сховище &rarr; Очистити дані</em>, або шляхом видалення гри з пристрою.</li>
+          <li><strong>Рекламний ідентифікатор:</strong> скинути або вимкнути персоналізацію реклами можна в меню <em>Налаштування &rarr; Google &rarr; Реклама</em>.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>7. Зміни в Політиці конфіденційності</h2>
+        <p>Ми можемо періодично оновлювати цю політику у разі змін у функціоналі гри чи вимогах законодавства. Актуальна редакція завжди доступна на цій веб-сторінці.</p>
+      </div>
+
+      <div class="card">
+        <h2>8. Зворотний зв'язок</h2>
+        <p>Якщо у вас виникли запитання щодо Політики конфіденційності або роботи гри, будь ласка, напишіть нам:</p>
+        <p><strong>Служба підтримки:</strong> <a href="mailto:alchemistofcolor@gmail.com">alchemistofcolor@gmail.com</a></p>
+      </div>
+    </div>
+
+    <!-- ==================== RUSSIAN CONTENT ==================== -->
+    <div id="content-ru" class="lang-content">
+      <div class="card">
+        <h2>1. Общие положения</h2>
+        <p>Настоящая Политика конфиденциальности описывает, как мобильная игра <strong>«Алхимик Цвета»</strong> (пакет <code>com.alchemistofcolor</code>) обрабатывает информацию при установке и использовании на устройствах Android.</p>
+        <p>Мы уважаем право пользователей на конфиденциальность. <strong>Мы не собираем, не продаем и не передаем персональные данные</strong> (такие как имя, домашний адрес, личный e-mail, телефонные номера, контакты, точное GPS-местоположение или биометрию).</p>
+      </div>
+
+      <div class="card">
+        <h2>2. Данные, сохраняемые локально на устройстве</h2>
+        <p>Для сохранения вашего прогресса и стабильной работы в режиме офлайн без необходимости регистрации аккаунта, игра сохраняет технические данные исключительно локально на вашем смартфоне:</p>
+        <ul>
+          <li><strong>Игровой прогресс:</strong> очки и рекорды во всех режимах (4×4, 5×5, 6×6, Квесты, Блиц), текущее состояние плиток на доске, счетчик ходов и статус ежедневных контрактов.</li>
+          <li><strong>Палитра и арсенал:</strong> открытые пигменты и самоцветы (Уровни 1–12), статистика синтезов, баланс Золотой Пыльцы и число инструментов (Отмена, Молот, Пипетка, Радуга).</li>
+          <li><strong>Настройки:</strong> включение звука и музыки, выбранный язык игры и статус отключения рекламы.</li>
+        </ul>
+        <p>Эти параметры хранятся в защищенном изолированном хранилище приложения на вашем устройстве (Android <code>SharedPreferences</code>) и не отсылаются на сторонние серверы.</p>
+      </div>
+
+      <div class="card">
+        <h2>3. Сторонние сервисы и монетизация</h2>
+        <p>Приложение интегрирует сертифицированные SDK экосистемы Google Play:</p>
+
+        <p><span class="badge-pill">AdMob</span> <strong>Google Mobile Ads (AdMob):</strong></p>
+        <p>Игра использует сеть Google AdMob для отображения баннеров под игровым полем, межстраничных переходов и видеороликов с вознаграждением («Второе дыхание», эфирный сундук). Сервис AdMob может обрабатывать технические данные устройства:</p>
+        <ul>
+          <li>Рекламный идентификатор Google (GAID).</li>
+          <li>Приблизительное географическое положение (на уровне страны или города по IP-адресу).</li>
+          <li>Диагностическую информацию и статистику показов рекламы для защиты от накруток.</li>
+        </ul>
+        <p>Подробности о правилах обработки данных Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Политика конфиденциальности Google</a>.</p>
+
+        <p style="margin-top: 14px;"><span class="badge-pill">Billing</span> <strong>Google Play In-App Billing:</strong></p>
+        <p>Любые платные внутриигровые покупки (например, отключение баннера навсегда за 49 ₽ / $0.49 или наборы золота) обрабатываются строго и исключительно через системный платежный шлюз <strong>Google Play Billing Library 8.0+</strong>. Разработчик игры не имеет доступа к данным ваших банковских карт и реквизитам счетов.</p>
+      </div>
+
+      <div class="card">
+        <h2>4. Информация о SIM-карте и валюте</h2>
+        <p>Игра считывает код страны SIM-карты (Android <code>simCountryIso</code>) строго локально для автоматического отображения цен в валюте страны пребывания (например, $, €, ₽, ₴, ₸ и т.д.), даже если язык интерфейса телефона отличается. Этот код не покидает устройство.</p>
+      </div>
+
+      <div class="card">
+        <h2>5. Защита конфиденциальности детей (COPPA)</h2>
+        <p>Игра «Алхимик Цвета» предназначена для семейного досуга и безопасна для игроков всех возрастов. Мы намеренно не собираем персональные сведения детей младше 13 лет. Рекламные объявления AdMob фильтруются в соответствии с политиками Google Play Families.</p>
+      </div>
+
+      <div class="card">
+        <h2>6. Управление данными и их удаление</h2>
+        <p>Так как данные хранятся локально, вы можете в любой момент полностью удалить их:</p>
+        <ul>
+          <li><strong>Удаление игровых данных:</strong> перейдите в <em>Настройки телефона &rarr; Приложения &rarr; Алхимик Цвета &rarr; Хранилище &rarr; Очистить данные</em> или удалите игру.</li>
+          <li><strong>Сброс рекламного ID:</strong> перейдите в <em>Настройки телефона &rarr; Google &rarr; Реклама &rarr; Сбросить рекламный идентификатор</em>.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>7. Изменения в Политике конфиденциальности</h2>
+        <p>Политика может обновляться в связи с изменениями в игре или требованиями Google Play. Актуальная версия всегда публикуется на этой странице.</p>
+      </div>
+
+      <div class="card">
+        <h2>8. Контакты разработчика</h2>
+        <p>Если у вас есть вопросы или предложения относительно политики конфиденциальности:</p>
+        <p><strong>Электронная почта поддержки:</strong> <a href="mailto:alchemistofcolor@gmail.com">alchemistofcolor@gmail.com</a></p>
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2026 Alchemist of Color • Package: <code>com.alchemistofcolor</code> • All Rights Reserved.
+    </footer>
+  </div>
+
+  <script>
+    function switchLanguage(lang) {
+      document.querySelectorAll('.lang-content').forEach(function(el) {
+        el.classList.remove('active');
+      });
+      document.querySelectorAll('.lang-btn').forEach(function(btn) {
+        btn.classList.remove('active');
+      });
+      var targetContent = document.getElementById('content-' + lang);
+      if (targetContent) {
+        targetContent.classList.add('active');
+      }
+      var targetBtn = Array.from(document.querySelectorAll('.lang-btn')).find(function(btn) {
+        return btn.getAttribute('onclick').indexOf(lang) !== -1;
+      });
+      if (targetBtn) {
+        targetBtn.classList.add('active');
+      }
+      try {
+        localStorage.setItem('alchemist_pp_lang', lang);
+      } catch (e) {}
+    }
+
+    // Auto-load saved or detected language
+    (function() {
+      var saved = null;
+      try {
+        saved = localStorage.getItem('alchemist_pp_lang');
+      } catch(e) {}
+      if (!saved) {
+        var userLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+        if (userLang.startsWith('uk')) saved = 'uk';
+        else if (userLang.startsWith('ru')) saved = 'ru';
+        else saved = 'en';
+      }
+      switchLanguage(saved);
+    })();
+  </script>
+</body>
+</html>
